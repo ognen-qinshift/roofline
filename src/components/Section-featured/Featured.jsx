@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./featured.css";
 import CarouselCard from "./CarouselCard/CarouselCard";
-import featuredData from "../../data/featuredCardsData.json";
+import featuredData from "../../data/featuredCardsData.js";
 import CarouselControls from "../CarouselMarkers/CarouselMarkers";
 
 function Featured() {

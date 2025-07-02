@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./testimonials.css"
 import './EmblaCarousel/embla.css'
 import EmblaCarousel from "./EmblaCarousel/EmblaCarousel";
-import testimonials from "../../data/testimonialsCarousel.json";
+import testimonials from "../../data/testimonialsCarousel.js";
 import AnimatedNumber from "./AnimatedNumber/AnimatedNumber";
 
 const OPTIONS = { dragFree: true, loop: true }

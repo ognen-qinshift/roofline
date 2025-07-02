@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../images/icons/logo-lg.svg?react";
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
@@ -27,39 +28,39 @@ function Navbar() {
 
       <div className={styles.zero_h_container_sticky}>
         <header className="container">
-          <a href="/" className={styles.logo_link}>
+          <Link to="/" className={styles.logo_link}>
             <Logo className={styles.logo} />
-          </a>
+          </Link>
 
 
           {/* desktop */}
           <nav className={`${styles.desktopNav} ${styles.hideOnMobile}`}>
-            <a href="/listings" className="underline link">Listings</a>
-            <a href="/about-us" className="underline link">About Us</a>
+            <Link to="/listings" className="underline link">Listings</Link>
+            <Link to="/about-us" className="underline link">About Us</Link>
             <a href="/#agents" className="underline link" onClick={e => handleNav(e, "agents")}>Agents</a>
             <a href="/#contact" className="underline link" onClick={e => handleNav(e, "contact")}>Contact</a>
           </nav>
 
           {/* mob */}
           <nav className={`${styles.mobileNav} ${menuOpen ? styles.open : ""}`}>
-            <a href="/listings" className="underline link" onClick={() => setMenuOpen(false)}>Listings</a>
-            <a href="/about-us" className="underline link" onClick={() => setMenuOpen(false)}>About Us</a>
+            <Link to="/listings" className="underline link" onClick={() => setMenuOpen(false)}>Listings</Link>
+            <Link to="/about-us" className="underline link" onClick={() => setMenuOpen(false)}>About Us</Link>
             <a href="/#agents" className="underline link" onClick={e => handleNav(e, "agents")}>Agents</a>
             <a href="/#contact" className="underline link" onClick={e => handleNav(e, "contact")}>Contact</a>
-            <a href="/listings" className="link btn-icon btn-arrow">
+            <Link to="/listings" className="link btn-icon btn-arrow" onClick={() => setMenuOpen(false)}>
               <div className="btn btn-black">Book Now</div>
               <span className="icon-circle btn btn-black">
                 <span className="material-icons-outlined">arrow_outward</span>
               </span>
-            </a>
+            </Link>
           </nav>
 
-          <a href="/listings" className={`link btn-icon btn-arrow ${styles.hideOnMobile}`}>
+          <Link to="/listings" className={`link btn-icon btn-arrow ${styles.hideOnMobile}`}>
             <div className="btn btn-black">Book Now</div>
             <span className="icon-circle btn btn-black">
               <span className="material-icons-outlined">arrow_outward</span>
             </span>
-          </a>
+          </Link>
 
           {/* hamburger */}
           <button

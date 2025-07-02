@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./listingsContent.css";
-import allProperties from "../../data/allPropertiesData.json";
+import allProperties from "../../data/allPropertiesData.js";
 import PropertyCard from "./PropertyCard";
 
 const categories = [

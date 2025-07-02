@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import slides from "../../data/videoSlides.json";
+import slides from "../../data/videoSlides.js";
 import "./vidBreak.css";
 import VideoSlide from "./VideoSlide/VideoSlide";
 import CarouselControls from "../CarouselMarkers/CarouselMarkers";

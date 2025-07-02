@@ -1,13 +1,16 @@
 {
-  "name": "realestate-client",
+  "name": "roofline",
+  "homepage": "https://ognen-qinshift.github.io/roofline",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "copy404": "node copy404.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npm run copy404 && gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
@@ -25,9 +28,11 @@
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
     "autoprefixer": "^10.4.21",
+    "cpx": "^1.5.0",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.10",

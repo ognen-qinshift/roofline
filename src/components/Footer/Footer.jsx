@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom"; // <-- Add this import
 
 
 function Footer() {
@@ -38,9 +39,9 @@ function Footer() {
             <div className="footer-left">
 
               <div>
-                <a href="/" className="logo_link">
+                <Link to="/" className="logo_link">
                   <Logo className="logo-footer" />
-                </a>
+                </Link>
                 <p>
                   At RoofLine, we bring you closer to your perfect home.
                   Whether you're buying, renting, or exploring the market, our team is here to guide you with expertise and care.

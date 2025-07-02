@@ -1,7 +1,7 @@
 import React from "react";
 import "./agents.css";
 import AgentCard from "./AgentCard/AgentCard";
-import agentsCards from "../../data/agentsCards.json";
+import agentsCards from "../../data/agentsCards.js";
 
 function Agents() {
     return (

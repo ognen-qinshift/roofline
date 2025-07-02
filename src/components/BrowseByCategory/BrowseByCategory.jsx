@@ -1,6 +1,6 @@
 import React from 'react';
 import './BrowseByCategory.css';
-import allProperties from '../../data/allPropertiesData.json';
+import allProperties from '../../data/allPropertiesData.js';
 import PropertyCard from '../Listings-hero/PropertyCard';
 
 function BrowseByCategory() {
