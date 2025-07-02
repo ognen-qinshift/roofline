@@ -1,0 +1,123 @@
+.agents-container {
+    background-color: var(--primarna-3);
+    margin-block: 4rem;
+    padding-block: 4rem;
+    padding-bottom: 6rem;
+    margin-inline: 1rem;
+    border-radius: 1rem;
+    position: relative;
+
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 120px 120px;
+
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        color: var(--primarna2);
+
+        margin-bottom: 3rem;
+
+        span {
+            background: linear-gradient(white, rgb(255, 221, 198));
+            color: transparent;
+            background-clip: text;
+        }
+    }
+}
+
+
+.agents-cards-container {
+    display: grid;
+    align-items: center;
+    place-content: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-inline: auto;
+    @media (max-width: 600px) {
+        width: max-content;
+    }
+}
+
+.agent-card-wrap {
+    position: relative;
+    max-width: 320px;
+
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        scale: 1.02;
+    }
+}
+
+.agent-card-data {
+    background-color: var(--grey2);
+    mask-image: url(../../images/masks/substract-long.svg);
+    mask-position: bottom right;
+    mask-size: 2000px;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    .agent-content {
+        padding: 1rem;
+    }
+
+
+    .agent-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-color: var(--primarna0);
+    }
+
+    h4 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: var(--grey0);
+        margin-bottom: 12px;
+    }
+}
+
+.stars-rating {
+
+    border-radius: 1rem;
+    background-color: var(--primarna3);
+    padding-inline: 12px;
+    padding-block: 2px;
+    font-size: .9rem;
+
+    width: min-content;
+
+
+    color: var(--primarna-2);
+    border: 1px solid var(--primarna-1);
+
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    &:hover {
+        scale: 1.1;
+    }
+
+
+    span {
+        font-size: 1rem;
+        transform: translate(0px, -1px);
+    }
+}
+
+.agents-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}

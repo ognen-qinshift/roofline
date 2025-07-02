@@ -1,0 +1,94 @@
+[
+  {
+    "img": "/images/houses/house-4-min.jpg",
+    "title": "Lakeview Villa",
+    "price": 2500,
+    "category": "Luxury"
+  },
+  {
+    "img": "/images/houses/house-1-min.jpg",
+    "title": "Skyline Penthouse",
+    "price": 3200,
+    "category": "Luxury"
+  },
+  {
+    "img": "/images/houses/house-5-min.jpg",
+    "title": "Oceanview Estate",
+    "price": 2800,
+    "category": "Luxury"
+  },
+  {
+    "img": "/images/houses/house-6-min.jpg",
+    "title": "The Glass House",
+    "price": 3400,
+    "category": "Luxury"
+  },
+  {
+    "img": "/images/houses/house-7-min.jpg",
+    "title": "Mountain Retreat",
+    "price": 2900,
+    "category": "Luxury"
+  },
+
+  {
+    "img": "/images/houses/house-2-min.jpg",
+    "title": "Family Home",
+    "price": 1800,
+    "category": "Family"
+  },
+  {
+    "img": "/images/houses/house-8-min.jpg",
+    "title": "Suburban Classic",
+    "price": 1650,
+    "category": "Family"
+  },
+  {
+    "img": "/images/houses/house-9-min.jpg",
+    "title": "Brightstone Residence",
+    "price": 1900,
+    "category": "Family"
+  },
+  {
+    "img": "/images/houses/house-10-min.jpg",
+    "title": "Willow Creek House",
+    "price": 1750,
+    "category": "Family"
+  },
+  {
+    "img": "/images/houses/house-11-min.jpg",
+    "title": "Sunset Park Home",
+    "price": 1600,
+    "category": "Family"
+  },
+
+  {
+    "img": "/images/houses/house-3-min.jpg",
+    "title": "Compact Studio",
+    "price": 1200,
+    "category": "Compact"
+  },
+  {
+    "img": "/images/houses/house-12-min.jpg",
+    "title": "Cozy Loft",
+    "price": 1100,
+    "category": "Compact"
+  },
+  {
+    "img": "/images/houses/house-13-min.jpg",
+    "title": "Micro Apartment",
+    "price": 1000,
+    "category": "Compact"
+  },
+  {
+    "img": "/images/houses/house-14-min.jpg",
+    "title": "Efficient One-Bed",
+    "price": 950,
+    "category": "Compact"
+  },
+  {
+    "img": "/images/houses/house-15-min.jpg",
+    "title": "Minimalist Flat",
+    "price": 1050,
+    "category": "Compact"
+  }
+]

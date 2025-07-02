@@ -1,0 +1,99 @@
+.faq-section {
+    position: relative;
+    background: radial-gradient(at top center, var(--primarna3), var(--primarna-2));
+    background-blend-mode: overlay;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-inline: 1rem;
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+.gradient-noise {
+    position: absolute;
+    inset: 0;
+    background: url(../../images/noise.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .16;
+    mix-blend-mode: color-burn;
+}
+
+
+.faq-list {
+    border-radius: 1rem;
+    background: linear-gradient(to top, var(--primarna3), var(--grey2));
+    padding: 2rem;
+    padding-bottom: 2.5rem;
+    box-shadow: 0 6 60px rgba(85, 34, 0, 0.4);
+    margin-inline: auto;
+    max-width: 600px;
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+}
+
+
+.faq-item {
+    border-bottom: 1px solid var(--primarna-1);
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(var(--primarna3)-60%, transparent 80%);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    margin: 0;
+
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    padding: 1rem 0;
+
+    color: var(--primarna-2);
+    outline: none;
+    transition: 0.3s;
+}
+
+.faq-item.open .faq-question {
+    color: var(--primarna0);
+}
+
+.chevron {
+    font-size: 2rem;
+    transition: transform 0.3s cubic-bezier(.4, 2, .6, 1);
+}
+
+.faq-item.open .chevron {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(.4, 2, .6, 1);
+}
+
+.faq-item.open .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer-inner {
+    padding-bottom: 1rem;
+    color: var(--primarna-3, );
+}

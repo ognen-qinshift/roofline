@@ -1,0 +1,71 @@
+.carouselControls {
+
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    /* width: 100%; */
+    max-width: 1300px;
+    left: 50%;
+    translate: -50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    button {
+        border: none;
+        background-color: var(--black);
+        border-radius: 99999px;
+
+        width: 3rem;
+        height: 3rem;
+
+        display: grid;
+        place-content: center;
+
+        cursor: pointer;
+
+        opacity: .8;
+        scale: 1;
+
+        transition: .3s;
+
+        &:hover {
+            opacity: 1;
+            scale: 1.1;
+        }
+
+        span {
+            color: white;
+            font-size: 2rem;
+        }
+
+    }
+}
+
+.carouselMarkers {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.carouselMarker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: var(--grey1, #ccc);
+    opacity: 0.5;
+    transition: .3s;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carouselMarker.active {
+    background: var(--primarna0);
+    opacity: 1;
+}
+

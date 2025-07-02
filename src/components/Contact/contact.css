@@ -1,0 +1,106 @@
+.contact {
+
+    margin-block: 6rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+
+
+.contact-flex {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--grey2);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+
+    mask-image: url(../../images/masks/substract-long.svg);
+    mask-position: bottom right;
+    mask-repeat: no-repeat;
+    mask-size: 3000px;
+    filter: drop-shadow(0 2px 30px rgba(0, 0, 0, 0.2));
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: var(--grey-2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Figtree, sans-serif;
+    color: var(--grey-1);
+    background-color: var(--white);
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    align-self: flex-start;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+/*  */
+
+.contact-info {
+    flex: 1 1 320px;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+
+    strong {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+.contact-info a {
+    color: var(--primarna0);
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.contact-map {
+    margin-top: 1rem;
+}
+
+.icon-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+@media (max-width: 900px) {
+    .contact-flex {
+        flex-direction: column;
+    }
+}

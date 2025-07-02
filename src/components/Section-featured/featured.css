@@ -1,0 +1,248 @@
+.featured {
+    padding-block: 3rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.featured-caption {
+    text-align: center;
+    font-size: 3rem;
+
+    span {
+        color: transparent;
+        background: linear-gradient(var(--primarna0), rgb(184, 83, 0));
+        background-clip: text;
+    }
+}
+
+.featured-tabs {
+    display: flex;
+    gap: 2rem;
+
+    font-weight: 600;
+
+    .tab:hover {
+        color: var(--primarna0);
+    }
+
+    .tab.active {
+        color: var(--primarna0);
+    }
+}
+
+/* CAROUSEL */
+
+.carousel-wrap {
+    position: relative;
+    margin-inline: 1rem;
+    margin-block: 2rem;
+}
+
+
+.carousel {
+
+    display: flex;
+    gap: 1rem;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    height: 540px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1rem;
+    scrollbar-width: none;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    /* overscroll-behavior-x: contain;
+    anchor-name: --carousel; */
+
+    /* >.carousel__slide {
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    } */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+
+.carousel__slide {
+
+    cursor: pointer;
+
+    flex: 0 0 300px;
+    height: min-content;
+
+    scroll-snap-align: center;
+    position: relative;
+    overflow: hidden;
+
+    /* scroll-snap-stop: always; */
+    transition: .3s;
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 1rem;
+        overflow: hidden;
+
+        background-color: var(--grey2);
+
+        mask-image: url(../../images/masks/subtract-corner-round.svg);
+        -webkit-mask-image: url(../../images/masks/subtract-corner-round.svg);
+
+        mask-size: calc(2046px/1.2);
+        /* -webkit-mask-size: auto; */
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: bottom right;
+        -webkit-mask-position: bottom right;
+        mask-mode: alpha;
+        -webkit-mask-mode: alpha;
+    }
+
+    .card-image {
+        width: 100%;
+        aspect-ratio: 1/1;
+        /* background-image: url(../../images/houses/house-1-min.jpg); */
+        background-color: var(--primarna0);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .card-txt {
+        padding: .8rem;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        margin-bottom: .3rem;
+    }
+
+    .card-price {
+        color: var(--grey-1);
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+
+    .arr-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        aspect-ratio: 1/1;
+        padding: 6px;
+        display: grid;
+        place-content: center;
+        border-radius: 99999px;
+        background-color: var(--primarna0);
+        color: var(--white);
+
+        transition: .3s;
+        overflow: hidden;
+    }
+
+
+
+    &:hover {
+        scale: 1.01;
+
+        .arr-btn span {
+            animation: btn-arrow .3s;
+        }
+    }
+}
+
+.carousel__slide.active {
+    flex: 0 0 400px;
+    z-index: 2;
+}
+
+/* 
+.carousel-controls {
+
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    max-width: 1300px;
+    left: 50%;
+    translate: -50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    button {
+        border: none;
+        background-color: var(--black);
+        border-radius: 99999px;
+
+        width: 3rem;
+        height: 3rem;
+
+        display: grid;
+        place-content: center;
+
+        cursor: pointer;
+
+        opacity: .8;
+        scale: 1;
+
+        transition: .3s;
+
+        &:hover {
+            opacity: 1;
+            scale: 1.1;
+        }
+
+        span {
+            color: white;
+            font-size: 2rem;
+        }
+
+    }
+}
+
+.carousel-markers {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.carousel-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: var(--grey1, #ccc);
+    opacity: 0.5;
+    transition: .3s;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carousel-marker.active {
+    background: var(--primarna0);
+    opacity: 1;
+}
+ */
